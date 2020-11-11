@@ -1,0 +1,10 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+#PassengerAppRoot "/home/medileep/fawzy"
+#PassengerBaseURI "/"
+#PassengerNodejs "/home/medileep/nodevenv/fawzy/10/bin/node"
+#PassengerAppType node
+#PassengerStartupFile app.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+RewriteEngine on
+RewriteRule ^$ public/ [L]
+RewriteRule ((?s).*) public/$1 [L]
